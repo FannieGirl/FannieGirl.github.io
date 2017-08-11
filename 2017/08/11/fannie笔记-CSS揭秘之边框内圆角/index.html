@@ -93,17 +93,22 @@
 
 
 
-<meta name="description" content="前言：我把这个博客当做我从事前端所有生活以及工作经验的分享。毕竟我的目标是要集才华与美貌于一身的奇女子。 “广度是深度的附属品” 与大家共勉之 正文：技术笔记还是先成博客开始吧！隔了好久不用的东西总会忘记啊！特别说起那就是这个博客一些 hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项目，突然运行还有点二丈的和尚 摸不着头脑。其实我主要想说的是 博客的写作技巧（毕竟我爬摸索了会） hex">
+<meta name="description" content="边框内圆角问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。 其实，以前我都是用两个div实现的。   解决方案如果只需要达成简单的实色效果，我们还可以通过其他的方法。 描边 并不会跟着元素的圆角走（因而可以实现外层是直角），box-shadow 却是会的，因此把两者叠加到一起，box-shadow 会刚好填补 描边和容器圆角之间的空隙，这两者的组合达成了">
 <meta name="keywords" content="fannie笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[fannie笔记] Hexo常用命令">
-<meta property="og:url" content="http://yoursite.com/2017/08/04/fannie笔记-Hexo常用命令/index.html">
+<meta property="og:title" content="[fannie笔记] CSS揭秘之边框内圆角">
+<meta property="og:url" content="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之边框内圆角/index.html">
 <meta property="og:site_name" content="FannieGirl">
-<meta property="og:description" content="前言：我把这个博客当做我从事前端所有生活以及工作经验的分享。毕竟我的目标是要集才华与美貌于一身的奇女子。 “广度是深度的附属品” 与大家共勉之 正文：技术笔记还是先成博客开始吧！隔了好久不用的东西总会忘记啊！特别说起那就是这个博客一些 hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项目，突然运行还有点二丈的和尚 摸不着头脑。其实我主要想说的是 博客的写作技巧（毕竟我爬摸索了会） hex">
-<meta property="og:updated_time" content="2017-08-11T01:13:51.503Z">
+<meta property="og:description" content="边框内圆角问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。 其实，以前我都是用两个div实现的。   解决方案如果只需要达成简单的实色效果，我们还可以通过其他的方法。 描边 并不会跟着元素的圆角走（因而可以实现外层是直角），box-shadow 却是会的，因此把两者叠加到一起，box-shadow 会刚好填补 描边和容器圆角之间的空隙，这两者的组合达成了">
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/23121179/6458857a-f79a-11e6-88d7-48e387872f9b.png">
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/23121189/68a15058-f79a-11e6-904e-7400082140ff.png">
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/23121910/3459fdf6-f79d-11e6-92b8-3c5c35d6247d.png">
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/23121913/36d52c04-f79d-11e6-99ab-97b70e8fdde3.png">
+<meta property="og:updated_time" content="2017-08-11T01:27:11.455Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[fannie笔记] Hexo常用命令">
-<meta name="twitter:description" content="前言：我把这个博客当做我从事前端所有生活以及工作经验的分享。毕竟我的目标是要集才华与美貌于一身的奇女子。 “广度是深度的附属品” 与大家共勉之 正文：技术笔记还是先成博客开始吧！隔了好久不用的东西总会忘记啊！特别说起那就是这个博客一些 hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项目，突然运行还有点二丈的和尚 摸不着头脑。其实我主要想说的是 博客的写作技巧（毕竟我爬摸索了会） hex">
+<meta name="twitter:title" content="[fannie笔记] CSS揭秘之边框内圆角">
+<meta name="twitter:description" content="边框内圆角问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。 其实，以前我都是用两个div实现的。   解决方案如果只需要达成简单的实色效果，我们还可以通过其他的方法。 描边 并不会跟着元素的圆角走（因而可以实现外层是直角），box-shadow 却是会的，因此把两者叠加到一起，box-shadow 会刚好填补 描边和容器圆角之间的空隙，这两者的组合达成了">
+<meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/19258229/23121179/6458857a-f79a-11e6-88d7-48e387872f9b.png">
 
 
 
@@ -131,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/04/fannie笔记-Hexo常用命令/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之边框内圆角/"/>
 
 
 
 
 
-  <title>[fannie笔记] Hexo常用命令 | FannieGirl</title>
+  <title>[fannie笔记] CSS揭秘之边框内圆角 | FannieGirl</title>
   
 
 
@@ -256,7 +261,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/04/fannie笔记-Hexo常用命令/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之边框内圆角/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FannieGirl">
@@ -273,7 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">[fannie笔记] Hexo常用命令</h1>
+          <h1 class="post-title" itemprop="name headline">[fannie笔记] CSS揭秘之边框内圆角</h1>
         
 
         <div class="post-meta">
@@ -285,8 +290,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-04T14:33:59+08:00">
-                2017-08-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-11T09:26:28+08:00">
+                2017-08-11
               </time>
             
 
@@ -320,32 +325,20 @@
       
 
       
-        <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><pre><code>我把这个博客当做我从事前端所有生活以及工作经验的分享。毕竟我的目标是要集才华与美貌于一身的奇女子。
-“广度是深度的附属品” 与大家共勉之
-</code></pre><h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><pre><code>技术笔记还是先成博客开始吧！隔了好久不用的东西总会忘记啊！特别说起那就是这个博客一些
-hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项目，突然运行还有点二丈的和尚
-摸不着头脑。其实我主要想说的是 博客的写作技巧（毕竟我爬摸索了会）
-</code></pre><h2 id="hexo-常用命令"><a href="#hexo-常用命令" class="headerlink" title="hexo 常用命令"></a>hexo 常用命令</h2><ul>
-<li>hexo g = hexo generate // 生成</li>
-<li>hexo d = hexo deploy // 部署</li>
-<li>hexo s = hexo server // 运行服务器</li>
-<li>hexo new post “article title” //新建文章</li>
-</ul>
-<h2 id="首页展示折叠"><a href="#首页展示折叠" class="headerlink" title="首页展示折叠"></a>首页展示折叠</h2><ul>
-<li>在需要折叠的地方添加 <a id="more"></a></li>
-</ul>
-<h2 id="文章中插入图片"><a href="#文章中插入图片" class="headerlink" title="文章中插入图片"></a>文章中插入图片</h2><ul>
-<li>使用本地路径：在hexo/source目录下新建一个img文件夹，将图片放入该文件夹下，<br>插入图片时链接即为/img/图片名称。</li>
-<li>使用微博图床，地址<a href="http://weibotuchuang.sinaapp.com/，将图片拖入区域中，" target="_blank" rel="external">http://weibotuchuang.sinaapp.com/，将图片拖入区域中，</a><br>会生成图片的URL，这就是链接地址</li>
-</ul>
-<h2 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h2><ul>
-<li>标题 ：在这段文字前加 “#” 号即可 一个代表一级标题以此类推，一共六级标题</li>
-<li>列表 ： “ * ” 即可变为无序列表，<pre><code>有序列表则直接在文字前加 “ 1. 2. 3. ” 符号要和文字之间加上一个字符的空格。
-</code></pre></li>
-<li>引用 ： 只需要在文本前加入“ &gt; ” 这种尖括号（大于号）即可</li>
-<li>分割线 : 分割线的语法只需要三个 “ * “号</li>
-<li>代码块 : 中间的代码包裹起来 用两个 `</li>
-</ul>
+        <h2 id="边框内圆角"><a href="#边框内圆角" class="headerlink" title="边框内圆角"></a>边框内圆角</h2><p>问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。</p>
+<p>其实，以前我都是用两个div实现的。</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23121179/6458857a-f79a-11e6-88d7-48e387872f9b.png" alt="qq 20170220182808"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23121189/68a15058-f79a-11e6-904e-7400082140ff.png" alt="qq 20170220182825"></p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>如果只需要达成简单的实色效果，我们还可以通过其他的方法。</p>
+<p>描边 并不会跟着元素的圆角走（因而可以实现外层是直角），box-shadow 却是会的，因此把两者叠加到一起，box-shadow 会刚好填补 描边和容器圆角之间的空隙，这两者的组合达成了我们的理想效果。</p>
+<p>例如：</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23121910/3459fdf6-f79d-11e6-92b8-3c5c35d6247d.png" alt="qq 20170220184745"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23121913/36d52c04-f79d-11e6-99ab-97b70e8fdde3.png" alt="qq 20170220184821"></p>
+<p>演示地址：<a href="https://jsfiddle.net/Fannie/06sjmL6n/10/" target="_blank" rel="external">https://jsfiddle.net/Fannie/06sjmL6n/10/</a></p>
+<p>这里引出了另一个问题了：到底多大的投影扩张可以填补这些空隙呢。</p>
+<h3 id="简单的方法就是-直接使用圆角半径的一半"><a href="#简单的方法就是-直接使用圆角半径的一半" class="headerlink" title="简单的方法就是 直接使用圆角半径的一半"></a>简单的方法就是 直接使用圆角半径的一半</h3><p>这个方法有点hack的味道。</p>
+<p>一般的情况下 还是用两个元素来实现吧。</p>
+<p>后言：<br>如果你对基础的知识点已经很熟悉，你可以自动跳过。写上去的原因是查漏补缺，巩固一下基础。<br>如果有不对的地方，欢迎你来吐槽。<br>本文主要参考《CSS 揭秘》一书 以及w3school；<br>参考链接 ：<a href="http://www.w3school.com.cn/cssref/pr_background-clip.asp" target="_blank" rel="external">http://www.w3school.com.cn/cssref/pr_background-clip.asp</a></p>
 
       
     </div>
@@ -393,8 +386,8 @@ hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/04/fannie漫记-22岁的我为何还是如此迷茫？/" rel="next" title="[fannie漫记]22岁的我为何还是如此迷茫？">
-                <i class="fa fa-chevron-left"></i> [fannie漫记]22岁的我为何还是如此迷茫？
+              <a href="/2017/08/11/fannie笔记-CSS揭秘之背景定位/" rel="next" title="[fannie笔记] CSS揭秘之背景定位">
+                <i class="fa fa-chevron-left"></i> [fannie笔记] CSS揭秘之背景定位
               </a>
             
           </div>
@@ -403,8 +396,8 @@ hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/11/fannie笔记-CSS揭秘之CSS编码技巧/" rel="prev" title="[fannie笔记] CSS揭秘之CSS编码技巧">
-                [fannie笔记] CSS揭秘之CSS编码技巧 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/11/fannie笔记-CSS揭秘之条纹背景/" rel="prev" title="[fannie笔记] CSS揭秘之条纹背景">
+                [fannie笔记] CSS揭秘之条纹背景 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -526,7 +519,7 @@ hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文："><span class="nav-number">2.</span> <span class="nav-text">正文：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-常用命令"><span class="nav-number">2.1.</span> <span class="nav-text">hexo 常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#首页展示折叠"><span class="nav-number">2.2.</span> <span class="nav-text">首页展示折叠</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章中插入图片"><span class="nav-number">2.3.</span> <span class="nav-text">文章中插入图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown语法"><span class="nav-number">2.4.</span> <span class="nav-text">markdown语法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#边框内圆角"><span class="nav-number">1.</span> <span class="nav-text">边框内圆角</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案"><span class="nav-number">1.1.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单的方法就是-直接使用圆角半径的一半"><span class="nav-number">1.2.</span> <span class="nav-text">简单的方法就是 直接使用圆角半径的一半</span></a></li></ol></li></ol></div>
             
 
           </div>

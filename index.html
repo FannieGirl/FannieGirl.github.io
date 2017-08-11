@@ -256,6 +256,508 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之条纹背景/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FannieGirl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FannieGirl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/11/fannie笔记-CSS揭秘之条纹背景/" itemprop="url">[fannie笔记] CSS揭秘之条纹背景</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-11T09:37:51+08:00">
+                2017-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="条纹背景"><a href="#条纹背景" class="headerlink" title="条纹背景"></a>条纹背景</h2><p><a href="https://github.com/FannieGirl/ifannie/" target="_blank" rel="external">https://github.com/FannieGirl/ifannie/</a><br>问题：条纹背景 在设觉设计中无处不在，我们真的可以用css 创建图案吗？</p>
+<p>这一章相对还是比较复杂的哦！一起get.<br>首先我们做一个渐变的背景</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23603480/697fdebc-0290-11e7-9284-56cbb935cb8e.png" alt="qq 20170306170756"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23603513/8a7a0ac0-0290-11e7-8a0e-a2a55bfb5279.png" alt="qq 20170306170821"></p>
+<h3 id="横条背景"><a href="#横条背景" class="headerlink" title="横条背景"></a>横条背景</h3><p>现在我们把这两个色标拉近一点<br><img src="https://cloud.githubusercontent.com/assets/19258229/23606976/121b7510-029e-11e7-9080-6090568f6035.png" alt="qq 20170306172205"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23607010/27127428-029e-11e7-99ae-8a2305460b82.png" alt="qq 20170306172216"></p>
+<p>这样好像条纹背景 就出来了哦！不过这是横向的，是不是还可以竖线呢！肯定是可以的啦，看看多变的条纹背景</p>
+<h3 id="竖条背景"><a href="#竖条背景" class="headerlink" title="竖条背景"></a>竖条背景</h3><p><img src="https://cloud.githubusercontent.com/assets/19258229/23607037/48913d64-029e-11e7-9639-537c1523db69.png" alt="qq 20170306175127"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23607050/4e85d4aa-029e-11e7-9f94-c78ba4a63344.png" alt="qq 20170306175106"></p>
+<h3 id="斜向背景"><a href="#斜向背景" class="headerlink" title="斜向背景"></a>斜向背景</h3><p><img src="https://cloud.githubusercontent.com/assets/19258229/23607600/5e40e8e2-02a0-11e7-898e-747207b74971.png" alt="qq 20170306190849"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23607603/6215936e-02a0-11e7-9afd-a39a55432e69.png" alt="qq 20170306190857"></p>
+<p>这样的条纹背景还是不够灵活的。还有更好的方案</p>
+<h3 id="liear-gradient-和-radial-gradient-还各有一个循坏的加强版：repeating-liear-gradient-和-repeating-radial-gradient-他们的工作方式是跟前两者类似的，但是不同点是：色标是无线循环重复的，直到填满整个背景。"><a href="#liear-gradient-和-radial-gradient-还各有一个循坏的加强版：repeating-liear-gradient-和-repeating-radial-gradient-他们的工作方式是跟前两者类似的，但是不同点是：色标是无线循环重复的，直到填满整个背景。" class="headerlink" title="liear-gradient() 和 radial-gradient()  还各有一个循坏的加强版：repeating-liear-gradient()  和 repeating-radial-gradient() 他们的工作方式是跟前两者类似的，但是不同点是：色标是无线循环重复的，直到填满整个背景。"></a>liear-gradient() 和 radial-gradient()  还各有一个循坏的加强版：repeating-liear-gradient()  和 repeating-radial-gradient() 他们的工作方式是跟前两者类似的，但是不同点是：色标是无线循环重复的，直到填满整个背景。</h3><p><img src="https://cloud.githubusercontent.com/assets/19258229/23607958/f33b079c-02a1-11e7-8fe1-794c1bdd51ba.png" alt="qq 20170306192018"></p>
+<h3 id="灵活的同色系条纹"><a href="#灵活的同色系条纹" class="headerlink" title="灵活的同色系条纹"></a>灵活的同色系条纹</h3><p>一般情况下，我们想要的条纹图案并不是由差异极大的几种颜色组成的，这些颜色往往属于同一色系，只是在明度方面有着轻微的差异</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23608086/979f766a-02a2-11e7-98fc-b9a47ac17582.png" alt="qq 20170306192454"></p>
+<p>实例演示地址：<a href="https://jsfiddle.net/06sjmL6n/13/" target="_blank" rel="external">https://jsfiddle.net/06sjmL6n/13/</a></p>
+<p>后言：<br>如果你对基础的知识点已经很熟悉，你可以自动跳过。写上去的原因是查漏补缺，巩固一下基础。<br>如果有不对的地方，欢迎你来吐槽。<br>本文主要参考《CSS 揭秘》一书 以及w3school；<br>参考链接 ：<a href="http://www.w3school.com.cn/cssref/pr_background-clip.asp" target="_blank" rel="external">http://www.w3school.com.cn/cssref/pr_background-clip.asp</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之边框内圆角/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FannieGirl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FannieGirl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/11/fannie笔记-CSS揭秘之边框内圆角/" itemprop="url">[fannie笔记] CSS揭秘之边框内圆角</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-11T09:26:28+08:00">
+                2017-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="边框内圆角"><a href="#边框内圆角" class="headerlink" title="边框内圆角"></a>边框内圆角</h2><p>问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。</p>
+<p>其实，以前我都是用两个div实现的。</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23121179/6458857a-f79a-11e6-88d7-48e387872f9b.png" alt="qq 20170220182808"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23121189/68a15058-f79a-11e6-904e-7400082140ff.png" alt="qq 20170220182825"></p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>如果只需要达成简单的实色效果，我们还可以通过其他的方法。</p>
+<p>描边 并不会跟着元素的圆角走（因而可以实现外层是直角），box-shadow 却是会的，因此把两者叠加到一起，box-shadow 会刚好填补 描边和容器圆角之间的空隙，这两者的组合达成了我们的理想效果。</p>
+<p>例如：</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23121910/3459fdf6-f79d-11e6-92b8-3c5c35d6247d.png" alt="qq 20170220184745"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23121913/36d52c04-f79d-11e6-99ab-97b70e8fdde3.png" alt="qq 20170220184821"></p>
+<p>演示地址：<a href="https://jsfiddle.net/Fannie/06sjmL6n/10/" target="_blank" rel="external">https://jsfiddle.net/Fannie/06sjmL6n/10/</a></p>
+<p>这里引出了另一个问题了：到底多大的投影扩张可以填补这些空隙呢。</p>
+<h3 id="简单的方法就是-直接使用圆角半径的一半"><a href="#简单的方法就是-直接使用圆角半径的一半" class="headerlink" title="简单的方法就是 直接使用圆角半径的一半"></a>简单的方法就是 直接使用圆角半径的一半</h3><p>这个方法有点hack的味道。</p>
+<p>一般的情况下 还是用两个元素来实现吧。</p>
+<p>后言：<br>如果你对基础的知识点已经很熟悉，你可以自动跳过。写上去的原因是查漏补缺，巩固一下基础。<br>如果有不对的地方，欢迎你来吐槽。<br>本文主要参考《CSS 揭秘》一书 以及w3school；<br>参考链接 ：<a href="http://www.w3school.com.cn/cssref/pr_background-clip.asp" target="_blank" rel="external">http://www.w3school.com.cn/cssref/pr_background-clip.asp</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之背景定位/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FannieGirl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FannieGirl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/11/fannie笔记-CSS揭秘之背景定位/" itemprop="url">[fannie笔记] CSS揭秘之背景定位</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-11T09:24:38+08:00">
+                2017-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="背景定位"><a href="#背景定位" class="headerlink" title="背景定位"></a>背景定位</h2><p>问题：很多时候，我们想针对容器某个角对背景图片做便宜定位。<br>个人觉得，背景定位应用还是很广的，在实践中经常遇到。在实践中才会发现它的美，真是强大。</p>
+<h3 id="background-position的扩展语法方案"><a href="#background-position的扩展语法方案" class="headerlink" title="background-position的扩展语法方案"></a>background-position的扩展语法方案</h3><p>  在css背景与边框中，background-position属性已经得到了扩展，它允许我们指定背景图片距离任意角的偏移量，只要我们在偏移量前面指定关键字。</p>
+<p>例如：</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23118511/60a0162e-f78f-11e6-8262-fd957a841eb4.png" alt="qq 20170220170904"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/23118536/7652feaa-f78f-11e6-82bd-2051b44cf433.png" alt="qq 20170220171013"></p>
+<p>效果演示地址：<a href="https://jsfiddle.net/Fannie/06sjmL6n/7/" target="_blank" rel="external">https://jsfiddle.net/Fannie/06sjmL6n/7/</a></p>
+<p>上述方案在不支持background-position扩展语法的浏览器中，背景图片会紧贴在左上角，这看起来很奇怪啊！，如是想到一个回退的方案，就是把bottom right 定位值写进background的简写属性中。</p>
+<h3 id="background-origin-方案"><a href="#background-origin-方案" class="headerlink" title="background-origin 方案 "></a>background-origin 方案
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/11/fannie笔记-CSS揭秘之背景定位/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之多重边框/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FannieGirl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FannieGirl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/11/fannie笔记-CSS揭秘之多重边框/" itemprop="url">[fannie笔记] CSS揭秘之多重边框</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-11T09:22:45+08:00">
+                2017-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="多重边框"><a href="#多重边框" class="headerlink" title="多重边框"></a>多重边框</h2><p>问题：我们通常希望在css代码层面以更灵活的方式来调整边框样式</p>
+<h3 id="方案一：box-shadow"><a href="#方案一：box-shadow" class="headerlink" title="方案一：box-shadow"></a>方案一：box-shadow</h3><p>目前为止，我们大多数人可能已经用过（或者滥用过）box-shadow来生成投影，不太为人之的是，它还接受四个参数（扩张半径），通过制定正值或负值，可以让投影面积加大或者减小,</p>
+<h3 id="用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影"><a href="#用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影" class="headerlink" title="用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影"></a>用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影</h3><p>知识背景：box-shadow 属性向框添加一个或多个阴影。<br>提示：请使用 border-image-* 属性来构造漂亮的可伸缩按钮！</p>
+<h3 id="语法：box-shadow-h-shadow-v-shadow-blur-spread-color-inset"><a href="#语法：box-shadow-h-shadow-v-shadow-blur-spread-color-inset" class="headerlink" title="语法：box-shadow: h-shadow v-shadow blur spread color inset;"></a>语法：box-shadow: h-shadow v-shadow blur spread color inset;</h3><p>注释：box-shadow 向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 inset 关键词来规定。省略长度的值是 0。</p>
+<p>  h-shadow    必需。水平阴影的位置。允许负值。<br>  v-shadow      必需。垂直阴影的位置。允许负值。<br>  blur           可选。模糊距离。<br>  spread           可选。阴影的尺寸。<br>  color           可选。阴影的颜色。请参阅 CSS 颜色值。<br>  inset           可选。将外部阴影 (outset) 改为内部阴影。</p>
+<p>创建多重边框，代码如下</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/22736537/8e35a018-ee39-11e6-839b-a8060bf1307f.png" alt="two-1"></p>
+<p>效果图：</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/22736489/4ed2d418-ee39-11e6-8e65-c1b7b3ce0d4e.png" alt="two-2"></p>
+<p>实例演示地址：<a href="https://jsfiddle.net/Fannie/06sjmL6n/5/" target="_blank" rel="external">https://jsfiddle.net/Fannie/06sjmL6n/5/</a></p>
+<h3 id="方案二：outline"><a href="#方案二：outline" class="headerlink" title="方案二：outline "></a>方案二：outline
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/11/fannie笔记-CSS揭秘之多重边框/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之半透明边框/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -323,8 +825,7 @@
 
       
         
-          
-            <h2 id="半透明边框"><a href="#半透明边框" class="headerlink" title="半透明边框"></a>半透明边框</h2><p>css 中的半透明颜色，比如用 rgba() 和 hsla()<br>但是在其他的属性中（比如边框）中使用半透明颜色并没有想象中那么容易哦！</p>
+          <h2 id="半透明边框"><a href="#半透明边框" class="headerlink" title="半透明边框"></a>半透明边框</h2><p>css 中的半透明颜色，比如用 rgba() 和 hsla()<br>但是在其他的属性中（比如边框）中使用半透明颜色并没有想象中那么容易哦！</p>
 <p>假设我们想给一个容器设置一层白色的背景和一道半透明白色边框，boby的背景会从它的半透明边框透上来。</p>
 <p>如果你单纯地这样写 是到达不到理想效果的</p>
 <p><img src="https://cloud.githubusercontent.com/assets/19258229/22732892/d8fc6a0a-ee2a-11e6-9158-46a8493c7af8.png" alt="one-5"></p>
@@ -332,18 +833,14 @@
 <h3 id="解决：-background-clip"><a href="#解决：-background-clip" class="headerlink" title="解决： background-clip"></a>解决： background-clip</h3><p>知识背景：background-clip 属性规定背景的绘制区域。### 默认值是 border-box;</p>
 <h3 id="语法：-background-clip-border-box-padding-box-content-box"><a href="#语法：-background-clip-border-box-padding-box-content-box" class="headerlink" title="语法： background-clip: border-box|padding-box|content-box;"></a>语法： background-clip: border-box|padding-box|content-box;</h3><p>  border-box     背景被裁剪到边框盒<br>  padding-box   背景被裁剪到内边距框<br>  content-box    背景被裁剪到内容框<br>浏览器支持：IE9+、Firefox、Opera、Chrome 以及 Safari 支持 background-clip 属性。</p>
 <p>这个属性的初始值是 border-box ,意味着背景会被元素的border-box（边框的外沿框）裁切掉，所以我们单纯的写法 看不到半透明边框的效果，我们要做的是把它的值设为 ### padding-box （内边距的外沿） 这样浏览器就会用内边距的外沿来把背景裁掉</p>
-<p>完整代码：</p>
-<p><img src="https://cloud.githubusercontent.com/assets/19258229/22732907/e6e3ed3c-ee2a-11e6-815c-b7a30b1a4c77.png" alt="one-6"></p>
-<p>效果图：</p>
-<p><img src="https://cloud.githubusercontent.com/assets/19258229/22732442/23e42f3c-ee29-11e6-82e9-ce0ed3ca76f5.png" alt="one-1"></p>
-<p>一脸认真，不知道效果 图有木有出来。。。<br>具体的代码可以看我提供的演示的地址</p>
-<h3 id="实例演示地址：https-jsfiddle-net-Fannie-06sjmL6n"><a href="#实例演示地址：https-jsfiddle-net-Fannie-06sjmL6n" class="headerlink" title="实例演示地址：https://jsfiddle.net/Fannie/06sjmL6n/"></a>实例演示地址：<a href="https://jsfiddle.net/Fannie/06sjmL6n/" target="_blank" rel="external">https://jsfiddle.net/Fannie/06sjmL6n/</a></h3><p>如果还是不太理解的，我把三个属性都实现一遍了，果然一目了然 （没有对比就没有伤害 啊哈哈）额无图无真相啊！</p>
-<p>效果图：</p>
-<p><img src="https://cloud.githubusercontent.com/assets/19258229/22732934/033fdf90-ee2b-11e6-8f87-e7b682d33a4c.png" alt="one-3"></p>
-<p>参考链接：<a href="https://jsfiddle.net/Fannie/06sjmL6n/4/" target="_blank" rel="external">https://jsfiddle.net/Fannie/06sjmL6n/4/</a></p>
-<p>后言：<br>  如果你对基础的知识点已经很熟悉，你可以自动跳过。写上去的原因是查漏补缺，巩固一下基础。<br>  如果有不对的地方，欢迎你来吐槽。<br>  本文主要参考《CSS 揭秘》一书 以及w3school；<br>  参考链接 ：<a href="http://www.w3school.com.cn/cssref/pr_background-clip.aspba" target="_blank" rel="external">http://www.w3school.com.cn/cssref/pr_background-clip.aspba</a></p>
-
-          
+<p>完整代码：
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/11/fannie笔记-CSS揭秘之半透明边框/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -982,7 +1479,7 @@ hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>

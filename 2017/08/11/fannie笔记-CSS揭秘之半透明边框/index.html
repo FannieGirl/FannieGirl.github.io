@@ -104,7 +104,7 @@
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/22732907/e6e3ed3c-ee2a-11e6-815c-b7a30b1a4c77.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/22732442/23e42f3c-ee29-11e6-82e9-ce0ed3ca76f5.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/22732934/033fdf90-ee2b-11e6-8f87-e7b682d33a4c.png">
-<meta property="og:updated_time" content="2017-08-11T01:19:30.113Z">
+<meta property="og:updated_time" content="2017-08-11T01:21:48.659Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[fannie笔记] CSS揭秘之半透明边框">
 <meta name="twitter:description" content="半透明边框css 中的半透明颜色，比如用 rgba() 和 hsla()但是在其他的属性中（比如边框）中使用半透明颜色并没有想象中那么容易哦！ 假设我们想给一个容器设置一层白色的背景和一道半透明白色边框，boby的背景会从它的半透明边框透上来。 如果你单纯地这样写 是到达不到理想效果的  不信（你可以试试）边框跑哪里去了？如果使用半透明颜色都不能实现半透明边框，那我们还有什么办法呢？网上我们看到太">
@@ -333,7 +333,7 @@
 <h3 id="解决：-background-clip"><a href="#解决：-background-clip" class="headerlink" title="解决： background-clip"></a>解决： background-clip</h3><p>知识背景：background-clip 属性规定背景的绘制区域。### 默认值是 border-box;</p>
 <h3 id="语法：-background-clip-border-box-padding-box-content-box"><a href="#语法：-background-clip-border-box-padding-box-content-box" class="headerlink" title="语法： background-clip: border-box|padding-box|content-box;"></a>语法： background-clip: border-box|padding-box|content-box;</h3><p>  border-box     背景被裁剪到边框盒<br>  padding-box   背景被裁剪到内边距框<br>  content-box    背景被裁剪到内容框<br>浏览器支持：IE9+、Firefox、Opera、Chrome 以及 Safari 支持 background-clip 属性。</p>
 <p>这个属性的初始值是 border-box ,意味着背景会被元素的border-box（边框的外沿框）裁切掉，所以我们单纯的写法 看不到半透明边框的效果，我们要做的是把它的值设为 ### padding-box （内边距的外沿） 这样浏览器就会用内边距的外沿来把背景裁掉</p>
-<p>完整代码：</p>
+<p>完整代码：<a id="more"></a></p>
 <p><img src="https://cloud.githubusercontent.com/assets/19258229/22732907/e6e3ed3c-ee2a-11e6-815c-b7a30b1a4c77.png" alt="one-6"></p>
 <p>效果图：</p>
 <p><img src="https://cloud.githubusercontent.com/assets/19258229/22732442/23e42f3c-ee29-11e6-82e9-ce0ed3ca76f5.png" alt="one-1"></p>
@@ -399,6 +399,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/11/fannie笔记-CSS揭秘之多重边框/" rel="prev" title="[fannie笔记] CSS揭秘之多重边框">
+                [fannie笔记] CSS揭秘之多重边框 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -471,7 +475,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
