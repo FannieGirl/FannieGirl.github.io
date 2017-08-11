@@ -256,6 +256,135 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之半透明边框/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FannieGirl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FannieGirl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/11/fannie笔记-CSS揭秘之半透明边框/" itemprop="url">[fannie笔记] CSS揭秘之半透明边框</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-11T09:18:47+08:00">
+                2017-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="半透明边框"><a href="#半透明边框" class="headerlink" title="半透明边框"></a>半透明边框</h2><p>css 中的半透明颜色，比如用 rgba() 和 hsla()<br>但是在其他的属性中（比如边框）中使用半透明颜色并没有想象中那么容易哦！</p>
+<p>假设我们想给一个容器设置一层白色的背景和一道半透明白色边框，boby的背景会从它的半透明边框透上来。</p>
+<p>如果你单纯地这样写 是到达不到理想效果的</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/22732892/d8fc6a0a-ee2a-11e6-9158-46a8493c7af8.png" alt="one-5"></p>
+<p>不信（你可以试试）<br>边框跑哪里去了？如果使用半透明颜色都不能实现半透明边框，那我们还有什么办法呢？网上我们看到太多已经实现的效果了。</p>
+<h3 id="解决：-background-clip"><a href="#解决：-background-clip" class="headerlink" title="解决： background-clip"></a>解决： background-clip</h3><p>知识背景：background-clip 属性规定背景的绘制区域。### 默认值是 border-box;</p>
+<h3 id="语法：-background-clip-border-box-padding-box-content-box"><a href="#语法：-background-clip-border-box-padding-box-content-box" class="headerlink" title="语法： background-clip: border-box|padding-box|content-box;"></a>语法： background-clip: border-box|padding-box|content-box;</h3><p>  border-box     背景被裁剪到边框盒<br>  padding-box   背景被裁剪到内边距框<br>  content-box    背景被裁剪到内容框<br>浏览器支持：IE9+、Firefox、Opera、Chrome 以及 Safari 支持 background-clip 属性。</p>
+<p>这个属性的初始值是 border-box ,意味着背景会被元素的border-box（边框的外沿框）裁切掉，所以我们单纯的写法 看不到半透明边框的效果，我们要做的是把它的值设为 ### padding-box （内边距的外沿） 这样浏览器就会用内边距的外沿来把背景裁掉</p>
+<p>完整代码：</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/22732907/e6e3ed3c-ee2a-11e6-815c-b7a30b1a4c77.png" alt="one-6"></p>
+<p>效果图：</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/22732442/23e42f3c-ee29-11e6-82e9-ce0ed3ca76f5.png" alt="one-1"></p>
+<p>一脸认真，不知道效果 图有木有出来。。。<br>具体的代码可以看我提供的演示的地址</p>
+<h3 id="实例演示地址：https-jsfiddle-net-Fannie-06sjmL6n"><a href="#实例演示地址：https-jsfiddle-net-Fannie-06sjmL6n" class="headerlink" title="实例演示地址：https://jsfiddle.net/Fannie/06sjmL6n/"></a>实例演示地址：<a href="https://jsfiddle.net/Fannie/06sjmL6n/" target="_blank" rel="external">https://jsfiddle.net/Fannie/06sjmL6n/</a></h3><p>如果还是不太理解的，我把三个属性都实现一遍了，果然一目了然 （没有对比就没有伤害 啊哈哈）额无图无真相啊！</p>
+<p>效果图：</p>
+<p><img src="https://cloud.githubusercontent.com/assets/19258229/22732934/033fdf90-ee2b-11e6-8f87-e7b682d33a4c.png" alt="one-3"></p>
+<p>参考链接：<a href="https://jsfiddle.net/Fannie/06sjmL6n/4/" target="_blank" rel="external">https://jsfiddle.net/Fannie/06sjmL6n/4/</a></p>
+<p>后言：<br>  如果你对基础的知识点已经很熟悉，你可以自动跳过。写上去的原因是查漏补缺，巩固一下基础。<br>  如果有不对的地方，欢迎你来吐槽。<br>  本文主要参考《CSS 揭秘》一书 以及w3school；<br>  参考链接 ：<a href="http://www.w3school.com.cn/cssref/pr_background-clip.aspba" target="_blank" rel="external">http://www.w3school.com.cn/cssref/pr_background-clip.aspba</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之CSS编码技巧/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -853,7 +982,7 @@ hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
