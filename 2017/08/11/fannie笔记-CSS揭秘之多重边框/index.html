@@ -8,23 +8,23 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>[fannie笔记] CSS揭秘之多重边框 | 西溪田田</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="多重边框问题：我们通常希望在css代码层面以更灵活的方式来调整边框样式 方案一：box-shadow目前为止，我们大多数人可能已经用过（或者滥用过）box-shadow来生成投影，不太为人之的是，它还接受四个参数（扩张半径），通过制定正值或负值，可以让投影面积加大或者减小, 用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影知识背景：box-shadow 属性向框添加一个或多个阴影。提示：">
+  <meta name="description" content="多重边框问题：我们通常希望在css代码层面以更灵活的方式来调整边框样式 方案一：box-shadow目前为止，我们大多数人可能已经用过（或者滥用过）box-shadow来生成投影，不太为人之的是，它还接受四个参数（扩张半径），通过制定正值或负值，可以让投影面积加大或者减小, 用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影">
 <meta name="keywords" content="fannie笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[fannie笔记] CSS揭秘之多重边框">
 <meta property="og:url" content="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之多重边框/index.html">
 <meta property="og:site_name" content="西溪田田">
-<meta property="og:description" content="多重边框问题：我们通常希望在css代码层面以更灵活的方式来调整边框样式 方案一：box-shadow目前为止，我们大多数人可能已经用过（或者滥用过）box-shadow来生成投影，不太为人之的是，它还接受四个参数（扩张半径），通过制定正值或负值，可以让投影面积加大或者减小, 用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影知识背景：box-shadow 属性向框添加一个或多个阴影。提示：">
+<meta property="og:description" content="多重边框问题：我们通常希望在css代码层面以更灵活的方式来调整边框样式 方案一：box-shadow目前为止，我们大多数人可能已经用过（或者滥用过）box-shadow来生成投影，不太为人之的是，它还接受四个参数（扩张半径），通过制定正值或负值，可以让投影面积加大或者减小, 用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/22736537/8e35a018-ee39-11e6-839b-a8060bf1307f.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/22736489/4ed2d418-ee39-11e6-8e65-c1b7b3ce0d4e.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/22736927/c3a168b6-ee3b-11e6-90ed-62d29b6864ac.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/22736936/d07cc594-ee3b-11e6-957a-a755d7ec74fe.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/22737144/b2e909ec-ee3c-11e6-9d6c-34160d4581b1.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/22737148/b9dfe798-ee3c-11e6-9810-78c29354acb2.png">
-<meta property="og:updated_time" content="2017-08-11T01:23:36.378Z">
+<meta property="og:updated_time" content="2017-10-09T09:23:15.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[fannie笔记] CSS揭秘之多重边框">
-<meta name="twitter:description" content="多重边框问题：我们通常希望在css代码层面以更灵活的方式来调整边框样式 方案一：box-shadow目前为止，我们大多数人可能已经用过（或者滥用过）box-shadow来生成投影，不太为人之的是，它还接受四个参数（扩张半径），通过制定正值或负值，可以让投影面积加大或者减小, 用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影知识背景：box-shadow 属性向框添加一个或多个阴影。提示：">
+<meta name="twitter:description" content="多重边框问题：我们通常希望在css代码层面以更灵活的方式来调整边框样式 方案一：box-shadow目前为止，我们大多数人可能已经用过（或者滥用过）box-shadow来生成投影，不太为人之的是，它还接受四个参数（扩张半径），通过制定正值或负值，可以让投影面积加大或者减小, 用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影">
 <meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/19258229/22736537/8e35a018-ee39-11e6-839b-a8060bf1307f.png">
   
     <link rel="alternative" href="/atom.xml" title="西溪田田" type="application/atom+xml">
@@ -181,7 +181,8 @@ var _hmt = _hmt || [];
       
         <h2 id="多重边框"><a href="#多重边框" class="headerlink" title="多重边框"></a>多重边框</h2><p>问题：我们通常希望在css代码层面以更灵活的方式来调整边框样式</p>
 <h3 id="方案一：box-shadow"><a href="#方案一：box-shadow" class="headerlink" title="方案一：box-shadow"></a>方案一：box-shadow</h3><p>目前为止，我们大多数人可能已经用过（或者滥用过）box-shadow来生成投影，不太为人之的是，它还接受四个参数（扩张半径），通过制定正值或负值，可以让投影面积加大或者减小,</p>
-<h3 id="用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影"><a href="#用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影" class="headerlink" title="用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影"></a>用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影</h3><p>知识背景：box-shadow 属性向框添加一个或多个阴影。<br>提示：请使用 border-image-* 属性来构造漂亮的可伸缩按钮！</p>
+<h3 id="用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影"><a href="#用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影" class="headerlink" title="用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影"></a>用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影</h3><a id="more"></a>
+<p>知识背景：box-shadow 属性向框添加一个或多个阴影。<br>提示：请使用 border-image-* 属性来构造漂亮的可伸缩按钮！</p>
 <h3 id="语法：box-shadow-h-shadow-v-shadow-blur-spread-color-inset"><a href="#语法：box-shadow-h-shadow-v-shadow-blur-spread-color-inset" class="headerlink" title="语法：box-shadow: h-shadow v-shadow blur spread color inset;"></a>语法：box-shadow: h-shadow v-shadow blur spread color inset;</h3><p>注释：box-shadow 向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 inset 关键词来规定。省略长度的值是 0。</p>
 <p>  h-shadow    必需。水平阴影的位置。允许负值。<br>  v-shadow      必需。垂直阴影的位置。允许负值。<br>  blur           可选。模糊距离。<br>  spread           可选。阴影的尺寸。<br>  color           可选。阴影的颜色。请参阅 CSS 颜色值。<br>  inset           可选。将外部阴影 (outset) 改为内部阴影。</p>
 <p>创建多重边框，代码如下</p>
@@ -189,7 +190,7 @@ var _hmt = _hmt || [];
 <p>效果图：</p>
 <p><img src="https://cloud.githubusercontent.com/assets/19258229/22736489/4ed2d418-ee39-11e6-8e65-c1b7b3ce0d4e.png" alt="two-2"></p>
 <p>实例演示地址：<a href="https://jsfiddle.net/Fannie/06sjmL6n/5/" target="_blank" rel="external">https://jsfiddle.net/Fannie/06sjmL6n/5/</a></p>
-<h3 id="方案二：outline"><a href="#方案二：outline" class="headerlink" title="方案二：outline "></a>方案二：outline <a id="more"></a></h3><p>在某种情况下，你可能只需要两层边框，那就可以设置一层常规边框，再加上outline（描边） 属性来产生外层的边框，这种方法的优点是边框的样式十分灵活，不像上面的box-shadow方案 模拟实线边框（假设我们需要的产生虚线边框效果，box-shadow 就不可做到）</p>
+<h3 id="方案二：outline"><a href="#方案二：outline" class="headerlink" title="方案二：outline"></a>方案二：outline</h3><p>在某种情况下，你可能只需要两层边框，那就可以设置一层常规边框，再加上outline（描边） 属性来产生外层的边框，这种方法的优点是边框的样式十分灵活，不像上面的box-shadow方案 模拟实线边框（假设我们需要的产生虚线边框效果，box-shadow 就不可做到）</p>
 <p>知识背景：outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。<br>注释：轮廓线不会占据空间，也不一定是矩形。</p>
 <h3 id="语法：outline：outline-color-outline-style-outline-width-inherit"><a href="#语法：outline：outline-color-outline-style-outline-width-inherit" class="headerlink" title="语法：outline：outline-color  outline-style outline-width  inherit"></a>语法：outline：outline-color  outline-style outline-width  inherit</h3><p>  outline-color    规定边框的颜色。<br>  outline-style    规定边框的样式。<br>  outline-width    规定边框的宽度。<br>  inherit    规定应该从父元素继承 outline 属性的设置。</p>
 <p>创建多重边框，代码如下</p>
@@ -344,7 +345,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#多重边框"><span class="toc-number">1.</span> <span class="toc-text">多重边框</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方案一：box-shadow"><span class="toc-number">1.1.</span> <span class="toc-text">方案一：box-shadow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影"><span class="toc-number">1.2.</span> <span class="toc-text">用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#语法：box-shadow-h-shadow-v-shadow-blur-spread-color-inset"><span class="toc-number">1.3.</span> <span class="toc-text">语法：box-shadow: h-shadow v-shadow blur spread color inset;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方案二：outline"><span class="toc-number">1.4.</span> <span class="toc-text">方案二：outline </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#语法：outline：outline-color-outline-style-outline-width-inherit"><span class="toc-number">1.5.</span> <span class="toc-text">语法：outline：outline-color  outline-style outline-width  inherit</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#多重边框"><span class="toc-number">1.</span> <span class="toc-text">多重边框</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方案一：box-shadow"><span class="toc-number">1.1.</span> <span class="toc-text">方案一：box-shadow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影"><span class="toc-number">1.2.</span> <span class="toc-text">用它的好处是它支持逗号分隔语法，我们可以创建任意数量的投影</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#语法：box-shadow-h-shadow-v-shadow-blur-spread-color-inset"><span class="toc-number">1.3.</span> <span class="toc-text">语法：box-shadow: h-shadow v-shadow blur spread color inset;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方案二：outline"><span class="toc-number">1.4.</span> <span class="toc-text">方案二：outline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#语法：outline：outline-color-outline-style-outline-width-inherit"><span class="toc-number">1.5.</span> <span class="toc-text">语法：outline：outline-color  outline-style outline-width  inherit</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -463,7 +464,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">Hi 朋友你好！&lt;br&gt;我可以安静一隅读读书，可以干柴烈火随心玩，可以深夜撸码聊技术。&lt;br&gt;啊！！！！说的有点骨感了，我是一个正儿八经的程序媛，不开车的那种（差点信了你的鬼话）&lt;br&gt;其实我长得很萌，大人是个爱说谎的生物（王者峡谷客串蔡文姬？）</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">Hi 朋友你好！&lt;br&gt;我可以安静一隅读读书，可以干柴烈火随心玩，可以深夜撸码聊技术。&lt;br&gt; 啊！！！！说的有点骨感了，我是一个正儿八经的程序媛，不开车的那种（差点信了你的鬼话） &lt;br&gt;  其实我长得很萌，大人是个爱说谎的生物（王者峡谷客串蔡文姬？）</div>
   	  	
     	</section>
     

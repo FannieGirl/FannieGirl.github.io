@@ -8,21 +8,21 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>[fannie笔记] CSS揭秘之边框内圆角 | 西溪田田</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="边框内圆角问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。 其实，以前我都是用两个div实现的。   解决方案如果只需要达成简单的实色效果，我们还可以通过其他的方法。 描边 并不会跟着元素的圆角走（因而可以实现外层是直角），box-shadow 却是会的，因此把两者叠加到一起，box-shadow 会刚好填补 描边和容器圆角之间的空隙，这两者的组合达成了">
+  <meta name="description" content="边框内圆角问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。 其实，以前我都是用两个div实现的。">
 <meta name="keywords" content="fannie笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[fannie笔记] CSS揭秘之边框内圆角">
 <meta property="og:url" content="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之边框内圆角/index.html">
 <meta property="og:site_name" content="西溪田田">
-<meta property="og:description" content="边框内圆角问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。 其实，以前我都是用两个div实现的。   解决方案如果只需要达成简单的实色效果，我们还可以通过其他的方法。 描边 并不会跟着元素的圆角走（因而可以实现外层是直角），box-shadow 却是会的，因此把两者叠加到一起，box-shadow 会刚好填补 描边和容器圆角之间的空隙，这两者的组合达成了">
+<meta property="og:description" content="边框内圆角问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。 其实，以前我都是用两个div实现的。">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/23121179/6458857a-f79a-11e6-88d7-48e387872f9b.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/23121189/68a15058-f79a-11e6-904e-7400082140ff.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/23121910/3459fdf6-f79d-11e6-92b8-3c5c35d6247d.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/19258229/23121913/36d52c04-f79d-11e6-99ab-97b70e8fdde3.png">
-<meta property="og:updated_time" content="2017-08-11T01:27:11.455Z">
+<meta property="og:updated_time" content="2017-10-09T09:22:55.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[fannie笔记] CSS揭秘之边框内圆角">
-<meta name="twitter:description" content="边框内圆角问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。 其实，以前我都是用两个div实现的。   解决方案如果只需要达成简单的实色效果，我们还可以通过其他的方法。 描边 并不会跟着元素的圆角走（因而可以实现外层是直角），box-shadow 却是会的，因此把两者叠加到一起，box-shadow 会刚好填补 描边和容器圆角之间的空隙，这两者的组合达成了">
+<meta name="twitter:description" content="边框内圆角问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。 其实，以前我都是用两个div实现的。">
 <meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/19258229/23121179/6458857a-f79a-11e6-88d7-48e387872f9b.png">
   
     <link rel="alternative" href="/atom.xml" title="西溪田田" type="application/atom+xml">
@@ -180,6 +180,7 @@ var _hmt = _hmt || [];
         <h2 id="边框内圆角"><a href="#边框内圆角" class="headerlink" title="边框内圆角"></a>边框内圆角</h2><p>问题：有时候我们需要一个容器，只在内侧有圆角，而边框或描边的四个角在外部仍然保持直角的形状。</p>
 <p>其实，以前我都是用两个div实现的。</p>
 <p><img src="https://cloud.githubusercontent.com/assets/19258229/23121179/6458857a-f79a-11e6-88d7-48e387872f9b.png" alt="qq 20170220182808"></p>
+<a id="more"></a>
 <p><img src="https://cloud.githubusercontent.com/assets/19258229/23121189/68a15058-f79a-11e6-904e-7400082140ff.png" alt="qq 20170220182825"></p>
 <h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>如果只需要达成简单的实色效果，我们还可以通过其他的方法。</p>
 <p>描边 并不会跟着元素的圆角走（因而可以实现外层是直角），box-shadow 却是会的，因此把两者叠加到一起，box-shadow 会刚好填补 描边和容器圆角之间的空隙，这两者的组合达成了我们的理想效果。</p>
@@ -452,7 +453,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">Hi 朋友你好！&lt;br&gt;我可以安静一隅读读书，可以干柴烈火随心玩，可以深夜撸码聊技术。&lt;br&gt;啊！！！！说的有点骨感了，我是一个正儿八经的程序媛，不开车的那种（差点信了你的鬼话）&lt;br&gt;其实我长得很萌，大人是个爱说谎的生物（王者峡谷客串蔡文姬？）</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">Hi 朋友你好！&lt;br&gt;我可以安静一隅读读书，可以干柴烈火随心玩，可以深夜撸码聊技术。&lt;br&gt; 啊！！！！说的有点骨感了，我是一个正儿八经的程序媛，不开车的那种（差点信了你的鬼话） &lt;br&gt;  其实我长得很萌，大人是个爱说谎的生物（王者峡谷客串蔡文姬？）</div>
   	  	
     	</section>
     

@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>[fannie笔记] CSS揭秘之CSS编码技巧 | 西溪田田</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CSS编码技巧尽量减少代码重复 尽量减少改动时需要编辑的地方 当某些值相互依赖时，应该把它们的相互关系用代码表示出来 代码易维护 VS 代码量少 currentColor —— CSS有史以来第一个变量 inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值  关于响应式网页设计 每个媒体查询都会增加成本 媒体查询的端点不应该由具体设备来决定  建议：  使用百分比长度取代固定长度">
+  <meta name="description" content="CSS编码技巧尽量减少代码重复 尽量减少改动时需要编辑的地方 当某些值相互依赖时，应该把它们的相互关系用代码表示出来 代码易维护 VS 代码量少 currentColor —— CSS有史以来第一个变量 inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值">
 <meta name="keywords" content="fannie笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[fannie笔记] CSS揭秘之CSS编码技巧">
 <meta property="og:url" content="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之CSS编码技巧/index.html">
 <meta property="og:site_name" content="西溪田田">
-<meta property="og:description" content="CSS编码技巧尽量减少代码重复 尽量减少改动时需要编辑的地方 当某些值相互依赖时，应该把它们的相互关系用代码表示出来 代码易维护 VS 代码量少 currentColor —— CSS有史以来第一个变量 inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值  关于响应式网页设计 每个媒体查询都会增加成本 媒体查询的端点不应该由具体设备来决定  建议：  使用百分比长度取代固定长度">
-<meta property="og:updated_time" content="2017-08-11T01:13:59.851Z">
+<meta property="og:description" content="CSS编码技巧尽量减少代码重复 尽量减少改动时需要编辑的地方 当某些值相互依赖时，应该把它们的相互关系用代码表示出来 代码易维护 VS 代码量少 currentColor —— CSS有史以来第一个变量 inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值">
+<meta property="og:updated_time" content="2017-10-09T09:23:38.224Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[fannie笔记] CSS揭秘之CSS编码技巧">
-<meta name="twitter:description" content="CSS编码技巧尽量减少代码重复 尽量减少改动时需要编辑的地方 当某些值相互依赖时，应该把它们的相互关系用代码表示出来 代码易维护 VS 代码量少 currentColor —— CSS有史以来第一个变量 inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值  关于响应式网页设计 每个媒体查询都会增加成本 媒体查询的端点不应该由具体设备来决定  建议：  使用百分比长度取代固定长度">
+<meta name="twitter:description" content="CSS编码技巧尽量减少代码重复 尽量减少改动时需要编辑的地方 当某些值相互依赖时，应该把它们的相互关系用代码表示出来 代码易维护 VS 代码量少 currentColor —— CSS有史以来第一个变量 inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值">
   
     <link rel="alternative" href="/atom.xml" title="西溪田田" type="application/atom+xml">
   
@@ -179,6 +179,7 @@ var _hmt = _hmt || [];
 <li>currentColor —— CSS有史以来第一个变量</li>
 <li>inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值</li>
 </ol>
+<a id="more"></a>
 <h3 id="关于响应式网页设计"><a href="#关于响应式网页设计" class="headerlink" title="关于响应式网页设计"></a>关于响应式网页设计</h3><ol>
 <li>每个媒体查询都会增加成本</li>
 <li>媒体查询的端点不应该由具体设备来决定</li>
@@ -206,7 +207,7 @@ var _hmt = _hmt || [];
 <li><p>合理使用简写是一种良好的防卫性编码方式，可以抵御未来的风险。当然，如果我们要明确地去覆盖某个具体的展开式属性并保留其他相关样式，那就需要用展开式属性。</p>
 </li>
 </ol>
-<h3 id="我们应该使用预处理器吗？"><a href="#我们应该使用预处理器吗？" class="headerlink" title="我们应该使用预处理器吗？"></a>我们应该使用预处理器吗？<a id="more"></a></h3><p>如果使用得当，在大型项目中可以让代码更加灵活。但是预处理器也不是完美无缺的：</p>
+<h3 id="我们应该使用预处理器吗？"><a href="#我们应该使用预处理器吗？" class="headerlink" title="我们应该使用预处理器吗？"></a>我们应该使用预处理器吗？<!--more--></h3><p>如果使用得当，在大型项目中可以让代码更加灵活。但是预处理器也不是完美无缺的：</p>
 <ol>
 <li>CSS的文件体积和复杂度可能会失控</li>
 <li>调试难度增加</li>
@@ -479,7 +480,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">Hi 朋友你好！&lt;br&gt;我可以安静一隅读读书，可以干柴烈火随心玩，可以深夜撸码聊技术。&lt;br&gt;啊！！！！说的有点骨感了，我是一个正儿八经的程序媛，不开车的那种（差点信了你的鬼话）&lt;br&gt;其实我长得很萌，大人是个爱说谎的生物（王者峡谷客串蔡文姬？）</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">Hi 朋友你好！&lt;br&gt;我可以安静一隅读读书，可以干柴烈火随心玩，可以深夜撸码聊技术。&lt;br&gt; 啊！！！！说的有点骨感了，我是一个正儿八经的程序媛，不开车的那种（差点信了你的鬼话） &lt;br&gt;  其实我长得很萌，大人是个爱说谎的生物（王者峡谷客串蔡文姬？）</div>
   	  	
     	</section>
     
