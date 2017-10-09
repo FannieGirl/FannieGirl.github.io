@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>[fannie笔记] CSS揭秘之CSS编码技巧 | 西溪田田</title>
+  <title>西溪田田</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CSS编码技巧尽量减少代码重复 尽量减少改动时需要编辑的地方 当某些值相互依赖时，应该把它们的相互关系用代码表示出来 代码易维护 VS 代码量少 currentColor —— CSS有史以来第一个变量 inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值">
-<meta name="keywords" content="fannie笔记">
-<meta property="og:type" content="article">
-<meta property="og:title" content="[fannie笔记] CSS揭秘之CSS编码技巧">
-<meta property="og:url" content="http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之CSS编码技巧/index.html">
+  <meta name="description" content="看我如何将美貌与才华集于一身">
+<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
+<meta property="og:type" content="website">
+<meta property="og:title" content="西溪田田">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="西溪田田">
-<meta property="og:description" content="CSS编码技巧尽量减少代码重复 尽量减少改动时需要编辑的地方 当某些值相互依赖时，应该把它们的相互关系用代码表示出来 代码易维护 VS 代码量少 currentColor —— CSS有史以来第一个变量 inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值">
-<meta property="og:updated_time" content="2017-10-09T09:23:38.224Z">
+<meta property="og:description" content="看我如何将美貌与才华集于一身">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[fannie笔记] CSS揭秘之CSS编码技巧">
-<meta name="twitter:description" content="CSS编码技巧尽量减少代码重复 尽量减少改动时需要编辑的地方 当某些值相互依赖时，应该把它们的相互关系用代码表示出来 代码易维护 VS 代码量少 currentColor —— CSS有史以来第一个变量 inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值">
+<meta name="twitter:title" content="西溪田田">
+<meta name="twitter:description" content="看我如何将美貌与才华集于一身">
   
     <link rel="alternative" href="/atom.xml" title="西溪田田" type="application/atom+xml">
   
@@ -165,14 +164,16 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-fannie笔记-CSS揭秘之CSS编码技巧" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-fannie笔记-CSS揭秘之CSS编码技巧" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      [fannie笔记] CSS揭秘之CSS编码技巧
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/11/fannie笔记-CSS揭秘之CSS编码技巧/">[fannie笔记] CSS揭秘之CSS编码技巧</a>
     </h1>
   
 
@@ -192,70 +193,11 @@ var _hmt = _hmt || [];
 <li>currentColor —— CSS有史以来第一个变量</li>
 <li>inherit可以用在任何CSS属性中，而且它总是绑定到父元素的计算值</li>
 </ol>
-<a id="more"></a>
-<h3 id="关于响应式网页设计"><a href="#关于响应式网页设计" class="headerlink" title="关于响应式网页设计"></a>关于响应式网页设计</h3><ol>
-<li>每个媒体查询都会增加成本</li>
-<li>媒体查询的端点不应该由具体设备来决定</li>
-</ol>
-<p>建议：</p>
-<ol>
-<li><p>使用百分比长度取代固定长度。如果实在做不到这一点，也应该尝试使用与视口相关的单位（vw、vh、vmin 和 vmax），他们的值解析为宽度或高度的百分比。</p>
-</li>
-<li><p>当你需要在较大分辨率下得到固定宽度时，使用max-width而不是width，因为它可以适应较小的分辨率，而无需使用媒体查询。</p>
-</li>
-<li><p>不要忘记为替换元素（比如img、object、video、iframe等）设置一个max-width，值为100%。<br>加入北京图片需要完整地铺满一个容器，不管容器的尺寸如何变化，background-size:cover这个属性都可以做到。但是，我们也要时刻牢记——带宽并不是无限的，因此在移动网页中通过CSS把一张大图缩小显示是不太明智的。</p>
-</li>
-<li><p>当图片（或其他元素）以行列式进行布局时，让视口的宽度来决定列的数量。弹性盒布局（即FlexBox）或者display:inline-block加上常规的文本折行行为，都可以实现这一点。</p>
-</li>
-<li><p>在使用多列文本时，指定column-width（列宽）而不是指定column-count（列数），这样他就可以在较小的屏幕上自动显示为单列布局。</p>
-</li>
-<li><p>总的来说，我们的思路是尽最大努力实现弹性可伸缩的布局，并在媒体查询的各个端点区间内指定响应的尺寸。</p>
-</li>
-</ol>
-<h3 id="合理使用简写"><a href="#合理使用简写" class="headerlink" title="合理使用简写"></a>合理使用简写</h3><ol>
-<li><p>在使用展开式属性的写法时，通常会遇到这样的问题：展开式写法并不会帮助你清空所有相关的其他属性，从而可能会干扰你想要达到的效果。</p>
-</li>
-<li><p>当然，可以把所有的展开式户型全部设置一遍，但可能会漏掉几个；或者，CSS工作组在未来引入更多的展开式属性。</p>
-</li>
-<li><p>合理使用简写是一种良好的防卫性编码方式，可以抵御未来的风险。当然，如果我们要明确地去覆盖某个具体的展开式属性并保留其他相关样式，那就需要用展开式属性。</p>
-</li>
-</ol>
-<h3 id="我们应该使用预处理器吗？"><a href="#我们应该使用预处理器吗？" class="headerlink" title="我们应该使用预处理器吗？"></a>我们应该使用预处理器吗？<!--more--></h3><p>如果使用得当，在大型项目中可以让代码更加灵活。但是预处理器也不是完美无缺的：</p>
-<ol>
-<li>CSS的文件体积和复杂度可能会失控</li>
-<li>调试难度增加</li>
-<li>预处理器在开发或城中引入了一定程度地延时</li>
-<li>每次抽象都必然会带来更高的学习成本</li>
-<li>他们都有自己的bug</li>
-<li>很多受预处理器启发的特性都已经以各种方式融入到原生的CSS中了。</li>
-</ol>
-<p>建议是，在每个项目开始时使用纯CSS，只有当代码变得开始无法保持DRY时，才切换到预处理器方案。为了避免可能发生的“依赖”或“滥用”，在引入预处理器的问题上需要冷静的决定，不应该在每个项目一开始时就不懂脑筋顺着惯性来。</p>
-<p>css 揭秘的第一章 告诉你整体写css的一些技巧。大方向的指导，这些坑我是一个一个踩过来的。有一种相见恨晚的感觉，不过呢，自己不踩怎么印象深刻，吸取教训呢。后面的章节是细节的css技巧，我很是期待，向css更高级进发，每一个技巧，每一段代码都应该去实践，你能够深刻的去理解吧！</p>
-<p> 书已到手里，学到一个技巧，就应该记录下来。这些都是自己走过来的路。尽管写的很辣鸡，如果你看到了，非常感谢，尽管来吐槽我吧！跪求虐</p>
-
+        
+          <a class="article-more-a" href="/2017/08/11/fannie笔记-CSS揭秘之CSS编码技巧/#more">more >></a>
+        
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -275,84 +217,16 @@ var _hmt = _hmt || [];
       
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/11/fannie笔记-CSS揭秘之CSS编码技巧/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/11/fannie笔记-CSS揭秘之CSS编码技巧/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/08/11/fannie笔记-CSS揭秘之半透明边框/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          [fannie笔记] CSS揭秘之半透明边框
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/08/04/fannie笔记-Hexo常用命令/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">[fannie笔记] Hexo常用命令</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -367,43 +241,340 @@ var _hmt = _hmt || [];
         </div>
         
         
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS编码技巧"><span class="toc-number">1.</span> <span class="toc-text">CSS编码技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#尽量减少代码重复"><span class="toc-number">1.1.</span> <span class="toc-text">尽量减少代码重复</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于响应式网页设计"><span class="toc-number">1.2.</span> <span class="toc-text">关于响应式网页设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合理使用简写"><span class="toc-number">1.3.</span> <span class="toc-text">合理使用简写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#我们应该使用预处理器吗？"><span class="toc-number">1.4.</span> <span class="toc-text">我们应该使用预处理器吗？</span></a></li></ol></li></ol>
-                    </div>
-                </span>
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-fannie笔记-Hexo常用命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/04/fannie笔记-Hexo常用命令/">[fannie笔记] Hexo常用命令</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/04/fannie笔记-Hexo常用命令/" class="archive-article-date">
+  	<time datetime="2017-08-04T06:33:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><pre><code>我把这个博客当做我从事前端所有生活以及工作经验的分享。毕竟我的目标是要集才华与美貌于一身的奇女子。
+“广度是深度的附属品” 与大家共勉之
+</code></pre><h1 id="正文："><a href="#正文：" class="headerlink" title="正文："></a>正文：</h1><pre><code>技术笔记还是先成博客开始吧！隔了好久不用的东西总会忘记啊！特别说起那就是这个博客一些
+hexo 常用的命令，隔了很长时间真的会忘记。几个月不跑的项目，突然运行还有点二丈的和尚
+摸不着头脑。其实我主要想说的是 博客的写作技巧（毕竟我爬摸索了会）
+&lt;!--more--&gt;
+</code></pre><h2 id="hexo-常用命令"><a href="#hexo-常用命令" class="headerlink" title="hexo 常用命令"></a>hexo 常用命令</h2><ul>
+<li>hexo g = hexo generate // 生成</li>
+<li>hexo d = hexo deploy // 部署</li>
+<li>hexo s = hexo server // 运行服务器</li>
+<li>hexo new post “article title” //新建文章</li>
+</ul>
+<h2 id="首页展示折叠"><a href="#首页展示折叠" class="headerlink" title="首页展示折叠"></a>首页展示折叠</h2><ul>
+<li>在需要折叠的地方添加</li>
+</ul>
+<h2 id="文章中插入图片"><a href="#文章中插入图片" class="headerlink" title="文章中插入图片"></a>文章中插入图片</h2><ul>
+<li>使用本地路径：在hexo/source目录下新建一个img文件夹，将图片放入该文件夹下，<br>插入图片时链接即为/img/图片名称。</li>
+<li>使用微博图床，地址<a href="http://weibotuchuang.sinaapp.com/，将图片拖入区域中，" target="_blank" rel="external">http://weibotuchuang.sinaapp.com/，将图片拖入区域中，</a><br>会生成图片的URL，这就是链接地址</li>
+</ul>
+<h2 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h2><ul>
+<li>标题 ：在这段文字前加 “#” 号即可 一个代表一级标题以此类推，一共六级标题</li>
+<li>列表 ： “ * ” 即可变为无序列表，<pre><code>有序列表则直接在文字前加 “ 1. 2. 3. ” 符号要和文字之间加上一个字符的空格。
+</code></pre></li>
+<li>引用 ： 只需要在文本前加入“ &gt; ” 这种尖括号（大于号）即可</li>
+<li>分割线 : 分割线的语法只需要三个 “ * “号</li>
+<li>代码块 : 中间的代码包裹起来 用两个 `</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">fannie笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/04/fannie笔记-Hexo常用命令/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
             </div>
         </div>
+        
         
     </div>
 </aside>
 
 
 
-  
-  
-  
 
   
-  <div id="SOHUCS" sid="fannie笔记-CSS揭秘之CSS编码技巧" ></div> 
-<script type="text/javascript"> 
-window.YiliaChangyanWrap = function() {
-    var appid = "true"; 
-    var conf = "true"; 
-    var width = window.innerWidth || document.documentElement.clientWidth; 
-    if (width < 960) { 
-    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); }
-}
-</script>
+    <article id="tags-fannie漫记-22岁的我为何还是如此迷茫？" class="article article-type-tags  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/04/fannie漫记-22岁的我为何还是如此迷茫？/">[fannie漫记]22岁的我为何还是如此迷茫？</a>
+    </h1>
   
 
+        
+        <a href="/2017/08/04/fannie漫记-22岁的我为何还是如此迷茫？/" class="archive-article-date">
+  	<time datetime="2017-08-04T03:11:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><pre><code>创建这个博客也有一段时间了，然而而是只挂了一篇文章，还是自己当时三分热度写的。
+说起来着实悲哀。
+身为女生的我，没有远大的抱负，对技术好像也没有很高的要求，也没有完美追求。
+可是我是处女座的呀！处女座不应该是要追求优雅的代码吗？
+我可能是个假的处女座的程序猿。
+
+&lt;!--more--&gt;
+
+一个人的消沉总是有原因的。
+每天都陷入无限的自我否定，自我怀疑，自我迷醉的境地。
+这个人就处在低谷中。
+“一个处于低谷中的人，无论往哪个方向走，都是在上升”，其实后面还有一句
+“最怕就此原地不动”
+</code></pre><h2 id="迷茫一：工作没有了激情是不是急死人？"><a href="#迷茫一：工作没有了激情是不是急死人？" class="headerlink" title="迷茫一：工作没有了激情是不是急死人？"></a>迷茫一：工作没有了激情是不是急死人？</h2><pre><code>待在创业公司，刚开始对于发展方向，是不确定的，不断调整的，也是不断探索的。
+一共换了三次方向，这次感觉方向又不对。一旦没有了目标，整个人如同一潭死水。
+每天有所事事，无所事事，得过且过的样子。然而日子过得并不好，总会觉得混日子
+不好，焦虑的要死要活的。那这有什么好迷茫的呢？工作不好那就换呗！这换谁都不会
+纠结的呀！昨晚跟着技术部齐刷刷的去撸串了。喝着啤酒，撸着串，是吹逼的好时机
+也是交谈想法的时候，中国的酒桌真是一个神奇的地方。可能我比不过那些老司机
+容易被洗脑，觉得这个人的经历不错，那个人的想法也很牛逼。
+“如果你很容易被推翻三观，不是经验不够，就是书读的太少” 。
+不知道是谁说的，但是我觉得说的好有道理。
+嗯！技术大佬说蠢蠢欲动，有新的希望。无论如何他都要坚持一下，拼一把。
+所以最近在思考人生。一条差不多废了的死咸鱼，挣扎翻身？
+不是强力反弹，就是沉默灭亡。
+</code></pre><h2 id="迷茫二：程序媛都缺乏对技术更高的追求吗？"><a href="#迷茫二：程序媛都缺乏对技术更高的追求吗？" class="headerlink" title="迷茫二：程序媛都缺乏对技术更高的追求吗？"></a>迷茫二：程序媛都缺乏对技术更高的追求吗？</h2><pre><code>依稀记得去年的自己，在技术上面的求知若渴，渴的想沙漠里的鱼。
+对技术不断的追求，求知欲望非常强烈。这也是我去年前端水平的一个飞跃点。
+至少跨过一个从传统前端到现代前端这之间的山丘。
+今年大半年过去了，成绩可谓海平线，波澜不惊的。（现在回想一下）
+好像一巴掌拍死自己。当然粗口还是不爆了。
+最多文雅的说：心中一片绿油油。
+这就是职业的可怕，没有进步就会淘汰，更何况是前端这日新月异的。
+怎么两个可怕字了得哦！断断续续还是咸鱼努力翻身的，只是自律性太差了。
+总有各种各样的理由说服自己，躺着比站着舒服，吃着比躺着实在。
+每一次都是雄心壮志的怎么样怎么样，结果却是三分热度，哦不对一分左右吧
+看到这里，这傻逼没救了。“不懂的自律的人，没有很高的成就”
+可是我还是想咸鱼翻翻身啊！我不应该只能做到现在的水平的，还有太多的事情
+你应该去做。你的双手可以创造更多的。
+对！就是这样不断的给自己灌鸡汤，总感觉自己还是有救的。坚决不弃疗。
+
+毒鸡汤也是鸡汤。为什么不是职场新人还是如此迷茫不堪。我还算是有一丢丢的
+自知之明。（不过也是一条废咸鱼）
+负能量就写到这里，一个人不止有正能量还有负能量。下回就分享我的正能量
+正能量就是不断地打败负能量。
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">fannie漫记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/04/fannie漫记-22岁的我为何还是如此迷茫？/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-看我如何将美貌于才华集一身？" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/11/看我如何将美貌于才华集一身？/">看我如何将美貌于才华集一身？</a>
+    </h1>
   
 
+        
+        <a href="/2017/07/11/看我如何将美貌于才华集一身？/" class="archive-article-date">
+  	<time datetime="2017-07-11T07:31:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>这是我正式拥有个人博客的第一篇文章。
+来聊一聊五毛的博客经历。
+去年买了一个阿里云的域名，腾讯云的服务器（自我感觉是没毛病啊）然鹅惊人的事实是域名备案
+通不过~通不过~通不过~（不知道谁告诉我的，重要的事情要说三遍，然鹅说了三遍也没有什么用）
+嗯，没错，请几天阿里爸爸给我发了信息（您的购买的域名已过期）
+&lt;!--more--&gt;
+啊哈哈哈，我内心毫无波澜，甚至有点想笑
+备案没有通过，我就在博客园注册了一个账号，一共也就写了十几篇文章（产量是真的低）
+啊？人总是会给自己找原因的，啊?工作忙啊。。。。。。。。。。。。。。。。。。。。
+
+然鹅，最近在博客园写了一篇文章，阅读数达到了2千多，评论几十条
+（之前写的都是几十阅读数，评论数0）
+说的我自己都于心不忍，掩面而泣。
+这是不是很鼓励我哦！其实我也是看到了这一年来自己的进步，思考问题的方式大大的不一样了。
+于是，头脑发热了，这两天用git+hexo 搭建了这个博客（内心还是有点小开心的）
+毕竟是我的第一个博客啊
+(⊙o⊙)…，这个博主是不是有病，，，，，，，，
+言归正传，希望把自己所学的，所踩过的坑，记录下来。也算是给新人一点点帮助。
+后面也能够看到自己的进步，好记性不如烂笔头嘛
+嗯~正经点。记录我在工作中所遇到的问题解决的方法啊！还有个人比较喜欢写作啊，研究知识。
+哦~动不动就出去约拍，最喜欢当然是拍帅帅的小哥哥，当然美女我也喜欢。偶尔跟设计师打交道，
+像是哈巴狗去请教设计上的问题，一直认为不会设计的前端不是好攻城狮，
+不会生活的程序员不是好美食家（什么鬼逻辑）
+
+总而言之，认真对待自己的博客，希望以后写的文章，欢迎喷
+（我不管，我是前端的萌妹子，小萝莉，不要欺负我）
+在这里你可以看到我的进步，人生本来是一张白纸，是否五彩斑斓，还是任灰色成为生活的主色调，
+都是个人选择，颜色一旦绘制上去了就无法修改，因为时光不会倒流，事情发生就无法改变了。
+
+听说分享知识，也是一种学习（不要掖着藏着哈）
+博客还有很多地方需要完善（等我慢慢来）还有告诉你们一个小秘密头像真的是我的本人
+（不信，可以加我个人微信的）
+关注微信公众号（西溪田田）
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">美丽日记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/11/看我如何将美貌于才华集一身？/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
   
 
 
@@ -426,8 +597,8 @@ window.YiliaChangyanWrap = function() {
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
